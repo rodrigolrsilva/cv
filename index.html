@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- This tells the browser what HTML version we're working with -->
+<html>
+
+<head>
+  <!-- the head is the part that holds info about the page and tells the browser how it should handle it. The title tag,
+    for example, will tell the browser what's the title of this particular page -->
+  <meta charset="utf-8">
+  <!-- this tells the browser that all text within our webpage is encoded with utf-8
+    Every character found in the unicode character charts can be encoded correctly with utf-8
+    Other meta attributes, like "description" or "keywords" can be found in the meta docs at w3schools
+    Meta tags tell the browser how it should render or display the webpage. It also gives search engines information about
+    the content of the website. <meta name"description" content="this is the 'subtitle description' that'll appear in a search
+    engine"-->
+
+  <title>My Personal site</title>
+</head>
+
+<body>
+  <table cellspacing="20">
+    <tr>
+      <!-- o conteúdo das duas células abaixo originalmente ficava antes de <hr size="2">  -->
+      <td><img src="https://static0.traveltek.net/uploaded/2014/12/1418231156.jpg" alt="A picture of Algeciras, Spain"> </td>
+      <td>
+        <h1>This is my website</h1>
+        <p><em>This is a <strong>generic</strong> description.</em></p>
+        <p>I'm the owner of a generic website, therefore I do generic things.
+      </td>
+    </tr>
+  </table>
+  <!-- <img src="https://static0.traveltek.net/uploaded/2014/12/1418231156.jpg" alt="A picture of Algeciras, Spain"> -->
+  <!-- alt is a message displayed if the browser has problems displaying the image itself.
+  For search engine optimization, getting ranking for certain keywords and such, this is something Google looks at to try
+to figure out what your webpage is about.
+If a file name is used instead of an URL, the filename will suffice, since it'll be in the same folder as the html file,
+as in algeciras.png . If it was in an images folder, I'd need to add a path to get there.-->
+  <!-- <h1>This is my website</h1>
+  <p><em>This is a <strong>generic</strong> description.</em></p>
+  <p>I'm the owner of a generic website, therefore I do generic things.</p> -->
+  <hr size="2">
+  <h3>Education</h3>
+  <ul>
+    <!-- unordered list -->
+    <li>Generic course 1</li><!-- each bullet point -->
+    <li>Generic course 2</li>
+  </ul>
+  <hr size="3">
+  <h2>Work Experience</h2>
+  <table border="1">
+    <!-- border is one of the deprecated attributes, but this doesn't mean it can't be used -->
+    <thead>
+      <tr>
+        <th>Dates</th><!-- t header cell element -->
+        <th>Work</th>
+        <!-- these two th could be put directly in the normal table, without thead, tbody and tfoot, but doing
+        it like this allows us to style the table head and body differently. If the header is isolated, for example, we can
+      keep it fixed while we scroll down the rest of the table, as in Excel.  -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- each tr pair represents a row -->
+        <td>2010-2013</td><!-- each td is a table cell contained within this one row -->
+        <td>Experience A </td> <!-- td = table data -->
+      </tr> <!-- the two TDs above are columns in this row being closed here -->
+      <tr>
+        <td>2010</td>
+        <td>Experience B</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+
+  </table>
+  <hr>
+  <br>
+  <a href="hobbies.html">My hobbies</a> <!-- anchor element -->
+  <br>
+  <a href="contact.html">My contact information</a>
+  <hr>
+  <h3>Skills</h3>
+  <table border="1" cellspacing="10">
+
+    <tr>
+      <td>Java</td>
+      <td>⭐⭐</td>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>Pull-ups</td>
+            <td>⭐⭐⭐⭐</td>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>OSs</td>
+      <td>⭐</td>
+    </tr>
+
+
+    </tr>
+
+  </table>
+
+
+</body>
+
+</html>

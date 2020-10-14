@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Information</title>
+  </head>
+  <body>
+    <h1>Contact Information</h1>
+    <h2>Telephone</h2>
+    <p>9999-9999</p>
+    <h2>E-mail</h2>
+    <p>name@generic.com</p>
+    <hr>
+    <form action="mailto:generic@email.com" method="post" enctype="text/plain"> <!-- if action=index.html, when submit is clicked that's where the user will
+      be taken. Really understanding action and method requires some CSS and JS. This mailto format will automatically open
+      your default email application to send an email after submit is clicked. O email será enviado para generic@email.com
+      e o email do input não faz diferença, já que o sender será a conta logada na app email do computador. Mas se o atributo name for preenchido então o email inserido aparecerá ao abrir o app email, como yourEmail=X
+      enctype="text/plain" diz que os dados no formulário são em texto normal, a adição desse trecho faz com que, ao abrir
+      o app de email para enviá-lo, não haverá símbolos como %.-->
+      <label>Your Name: </label>
+      <input type="text" name="yourName" value=""><!-- needed in order to store that information. Now we need a submit button -->
+      <!-- <input type="color" name="" value=""> -->
+      <br>
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" value=""><br><!-- dar valor ao name é o que vai identificar os dados em cada input
+      o tipo email é diferente de text pois o navegador faz alguma validação básica, como garantir que o email tem @-->
+      <label>Your Message:</label><br><!-- agora que valores foram adicionados a name, aparecerão ao abrir o app email-->
+      <textarea name="yourMessage" rows="10" cols="30"></textarea> <!-- it's one of those boxes of customizable size, but this is the default size-->
+      <br><!-- <label>Do you want to sign up to the email list?</label>
+      <input type="checkbox" name="" value=""> -->
+      <input type="submit" name=""> <!-- displays submit button -->
+      <br><!-- <label>Attach an image:</label>
+      <input type="file" name="" value="">
+      <br><label>Choose your favorite number:</label>
+      <input type="number" name="" value=""><br>
+      <label>Pick an appropriate date:</label>
+      <input type="date" name="" value=""> -->
+      <!-- <input type="image" src="http://www.eupedia.com/images/content/wernigerode-2.jpg" alt="Wernigerode castle in Saxony-Anhalt"> -->
+    </form>
+  </body>
+</html>
